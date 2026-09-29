@@ -1,0 +1,7 @@
+$t('Machine.FirmwarePanel.State.ExternallyManaged')
+$t('Machine.FirmwarePanel.State.Indeterminate')
+$t('Machine.FirmwarePanel.State.NotIdentified')
+$t('Machine.FirmwarePanel.State.NotResponding')
+$t('Machine.FirmwarePanel.State.UnsupportedLegacy')
+$t('Machine.FirmwarePanel.State.UnsupportedMcu')
+$t('Machine.FirmwarePanel.State.UpdateAvailable')
