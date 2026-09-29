@@ -1,0 +1,60 @@
+{
+    "api_version": 1,
+    "blocker": null,
+    "host": {
+        "checkout_version": "v0.13.0-100-g0123456ab",
+        "klipper_path": "/home/pi/klipper",
+        "klippy_message": "Printer is ready",
+        "klippy_state": "ready",
+        "software_version": "v0.13.0-100-g0123456ab"
+    },
+    "mcus": [
+        {
+            "actions": [],
+            "message": "running v0.13.0-100-g0123456ab",
+            "name": "mcu",
+            "running_version": "v0.13.0-100-g0123456ab",
+            "state": "current",
+            "transport": {
+                "device": "/dev/serial/by-id/usb-Klipper_stm32h723xx_000000000000-if00",
+                "type": "serial"
+            }
+        },
+        {
+            "actions": [],
+            "message": "running v0.13.0-100-g0123456ab",
+            "name": "toolhead",
+            "running_version": "v0.13.0-100-g0123456ab",
+            "state": "current",
+            "transport": {
+                "interface": "can0",
+                "type": "can",
+                "uuid": "0123456789ab"
+            }
+        },
+        {
+            "actions": [],
+            "message": "running v0.13.0-100-g0123456ab",
+            "name": "host",
+            "running_version": "v0.13.0-100-g0123456ab",
+            "state": "current",
+            "transport": {
+                "device": "/tmp/klipper_host_mcu",
+                "type": "serial"
+            }
+        },
+        {
+            "actions": [],
+            "message": "managed by third-party firmware",
+            "name": "probe",
+            "running_version": "VENDOR v1 2.0.0",
+            "state": "externally_managed",
+            "transport": {
+                "interface": "can0",
+                "type": "can",
+                "uuid": "ba9876543210"
+            }
+        }
+    ],
+    "run": null
+}
