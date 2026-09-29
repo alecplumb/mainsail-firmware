@@ -40,15 +40,19 @@ export default class TheUpdateManagerDialog extends Mixins(BaseMixin) {
     }
 
     get titleRunning() {
-        const key = this.isRecovery ? 'App.UpdateDialog.Recovering' : 'App.UpdateDialog.Updating'
+        const title = this.isRecovery
+            ? this.$t('App.UpdateDialog.Recovering', { software: this.software })
+            : this.$t('App.UpdateDialog.Updating', { software: this.software })
 
-        return this.$t(key, { software: this.software }).toString()
+        return title.toString()
     }
 
     get titleDone() {
-        const key = this.isRecovery ? 'App.UpdateDialog.RecoveringDone' : 'App.UpdateDialog.UpdatingDone'
+        const title = this.isRecovery
+            ? this.$t('App.UpdateDialog.RecoveringDone', { software: this.software })
+            : this.$t('App.UpdateDialog.UpdatingDone', { software: this.software })
 
-        return this.$t(key, { software: this.software }).toString()
+        return title.toString()
     }
 
     close() {
